@@ -58,6 +58,11 @@ sumbitBtn.addEventListener("click", function (e) {
   if (button5Clicked === true) {
     mainCard.classList.add("hidden");
     successCard.classList.remove("hidden");
+  } else {
+    alert(`
+      "Kindly select a rating to help us improve
+       and deliver the best possible experience.😊"
+`);
   }
 });
 
