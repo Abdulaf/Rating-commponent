@@ -16,25 +16,31 @@ let button2Clicked = false;
 let button3Clicked = false;
 let button4Clicked = false;
 let button5Clicked = false;
+let buttons = false;
 
 btn1.addEventListener("click", function () {
   button1Clicked = true;
+  buttons = true;
 });
 
 btn2.addEventListener("click", function () {
   button2Clicked = true;
+  buttons = true;
 });
 
 btn3.addEventListener("click", function () {
-  button2Clicked = true;
+  button3Clicked = true;
+  buttons = true;
 });
 
 btn4.addEventListener("click", function () {
-  button2Clicked = true;
+  button4Clicked = true;
+  buttons = true;
 });
 
 btn5.addEventListener("click", function () {
-  button2Clicked = true;
+  button5Clicked = true;
+  buttons = true;
 });
 
 sumbitBtn.addEventListener("click", function (e) {
@@ -58,7 +64,8 @@ sumbitBtn.addEventListener("click", function (e) {
   if (button5Clicked === true) {
     mainCard.classList.add("hidden");
     successCard.classList.remove("hidden");
-  } else {
+  }
+  if (buttons === false) {
     alert(`
       "Kindly select a rating to help us improve
        and deliver the best possible experience.😊"
