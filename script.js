@@ -16,52 +16,46 @@ let button2Clicked = false;
 let button3Clicked = false;
 let button4Clicked = false;
 let button5Clicked = false;
-let submitButtondisabled = false;
 
 btn1.addEventListener("click", function () {
   button1Clicked = true;
-  submitButtondisabled = true;
 });
 
 btn2.addEventListener("click", function () {
   button2Clicked = true;
-  submitButtondisabled = true;
 });
 
 btn3.addEventListener("click", function () {
   button2Clicked = true;
-  submitButtondisabled = true;
 });
 
 btn4.addEventListener("click", function () {
   button2Clicked = true;
-  submitButtondisabled = true;
 });
 
 btn5.addEventListener("click", function () {
   button2Clicked = true;
-  submitButtondisabled = true;
 });
 
 sumbitBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  if (button1Clicked === true && submitButtondisabled === true) {
+  if (button1Clicked === true) {
     mainCard.classList.add("hidden");
     successCard.classList.remove("hidden");
   }
-  if (button2Clicked === true && submitButtondisabled === true) {
+  if (button2Clicked === true) {
     mainCard.classList.add("hidden");
     successCard.classList.remove("hidden");
   }
-  if (button3Clicked === true && submitButtondisabled === true) {
+  if (button3Clicked === true) {
     mainCard.classList.add("hidden");
     successCard.classList.remove("hidden");
   }
-  if (button4Clicked === true && submitButtondisabled === true) {
+  if (button4Clicked === true) {
     mainCard.classList.add("hidden");
     successCard.classList.remove("hidden");
   }
-  if (button5Clicked === true && submitButtondisabled === true) {
+  if (button5Clicked === true) {
     mainCard.classList.add("hidden");
     successCard.classList.remove("hidden");
   }
